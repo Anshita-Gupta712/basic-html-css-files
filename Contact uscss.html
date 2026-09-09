@@ -1,0 +1,138 @@
+<html>
+<head>
+    <title>Contact Form</title>
+   <link rel="stylesheet" href="mycss.css">
+   <link rel="stylesheet" href="Form.html">
+   <link rel="stylesheet" href="Contact uscss.html">
+   <link rel="stylesheet" href="Personal infocss.html"> 
+   <link rel="stylesheet" href="Admission form.html"> 
+</head>
+</body>
+<body>
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            const addr = document.getElementById("address").value;
+            const email = document.getElementById("email").value;
+            const pass = document.getElementById("password").value;
+            const sub = document.getElementById("subject").value;
+            const agree = document.getElementById("agree").checked;
+
+            const nameErr = document.getElementById("name-error");
+            const addrErr = document.getElementById("address-error");
+            const emailErr = document.getElementById("email-error");
+            const passErr = document.getElementById("password-error");
+            const subErr = document.getElementById("subject-error");
+            const agreeErr = document.getElementById("agree-error");
+
+            nameErr.textContent = "";
+            addrErr.textContent = "";
+            emailErr.textContent = "";
+            passErr.textContent = "";
+            subErr.textContent = "";
+            agreeErr.textContent = "";
+
+            let isValid = true;
+            if (name === "" || /\d/.test(name)) {
+                nameErr.textContent = "Please enter your name properly.";
+                isValid = false;
+            }
+            if (addr === "") {
+                addrErr.textContent = "Please enter your address.";
+                isValid = false;
+            }
+            if (email === "" || !email.includes("@") || !email.includes(".")) {
+                emailErr.textContent = "Please enter a valid email address.";
+                isValid = false;
+            }
+            if (pass === "" || pass.length < 6) {
+                passErr.textContent = "Please enter a password with at least 6 characters.";
+                isValid = false;
+            }
+            if (sub === "") {
+                subErr.textContent = "Please select your course.";
+                isValid = false;
+            }
+            if (!agree) {
+                agreeErr.textContent = "Please agree to the above information.";
+                isValid = false;
+            }
+            if (isValid) {
+                alert("Form submitted successfully!");
+                return true;
+            } else {
+                return false; 
+            }
+        }
+
+        function resetErrors() {
+            document.getElementById("name-error").textContent = "";
+            document.getElementById("address-error").textContent = "";
+            document.getElementById("email-error").textContent = "";
+            document.getElementById("password-error").textContent = "";
+            document.getElementById("subject-error").textContent = "";
+            document.getElementById("agree-error").textContent = "";       
+ }
+</script>
+</head>
+</body
+
+
+
+<tr>
+<div id="main">
+  <div id="Header">
+  </div>
+<div id="mydiv">MARATHWADA COLLEGE OF ENGINEERING PUNE</div>
+<div id="navbar">
+
+<table border="1" id="tone1">
+<tr>
+  <td><a href="file:///D:/ANSHITA/Form.html">Home</a></td>
+  <td><a href="file:///D:/ANSHITA/Personal infocss.html">About us</td>
+  <td><a href="file:///D:/ANSHITA/Contact uscss.html">Contact us</td>
+  <td><a href="file:///D:/ANSHITA/Admission form.html">Placement</td>
+  <td>Infrastructure</td>
+</tr>
+</table>
+<form>
+<div id="cssdiv">
+<table border="1"bg color="blue">
+<title>page title</title>
+</head>
+<body>
+<form>
+<tr>
+ <label class="lbl">First name</label>
+ <input type="text"><br><br>
+ <label class="lbl">Last name</label>
+ <input type="text"><br><br>
+ <label class="lbl">Email address</label>
+ <input type="email"><br><br>
+ 
+ <p>Query Type</p>
+ <div id="General Enquiry"><p><input type="radio" name="Query type"value="General Enquiry">General Enquiry</p></div>
+ <p><input type="radio" name="Query type"value="Support Request">Support Request</p>
+ <p>Message:<br/></p>
+ <p><textarea rows="5" cols="50"name="description"></p> 
+ </textarea>
+<p><input type="radio" name="I Consent to being contacted by the user">I Consent to being contacted by the user</p>
+</p><button type="square button">Submit</button></p> 
+</tr>
+</form>
+</div>
+<header class="navbar">
+  <div class="logo-container">
+    <!-- Links logo to homepage, uses alt text for SEO accessibility -->
+    <a href="/" class="logo-link">
+      <img src="infoys.png" alt="Infoys Logo" class="logo-img">
+      <img src="jp morgan.png" alt="Jp morgan" class="logo-img">
+      <img src="amazon.png" alt="Amazon Logo" class="logo-img">
+      <img src="microsoft.png" alt="Microsoft Logo" class="logo-img"><br><br>
+      <img src="oracle.png" alt="Oracle Logo" class="logo-img"><br><br>
+      <img src="goldman sachs.png" alt="goldman sachs Logo" class="logo-img">
+    </a>
+  </div>
+</header>
+</body>
+</html>
