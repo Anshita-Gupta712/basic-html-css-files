@@ -1,0 +1,184 @@
+#main{
+      background-color:light blue;
+      height: 1200px; 
+      width: 1200px;      
+      width: 90%;              
+     margin: 0 auto; 
+     text-align:center;
+     border:15px solid black;    
+}
+
+ #navbar{
+     background-color:red;
+     width:100%;
+     height:30px;
+     border-width=15px;    
+} 
+#mydiv{       
+        line-height:70px;
+        Font-style:bold;
+        Font-size:80px;  
+}
+#tone1{
+        width:100%;
+        text-align:center;
+        border-width:1px;    
+}
+#header{    
+     width:1200px;
+     Height:100px;
+     color:red;
+     margin-top:10px;
+     font-size:50px;
+}
+#main{
+    background-color:light blue;
+}
+#left{     
+      width:1200px;
+     Height:200px;
+}
+#right{
+      width:1200px;
+     Height:800px;
+}
+#footer{
+     width:1200px;
+     Height:200px;
+}
+#mydiv{
+       color:red;
+       position:relative;
+       top:-35px;
+       background-color:yellow;
+       padding:10px;
+       margin-top:-15px;
+       font-style:bold;
+}
+#trr{
+    padding:90px;
+    Height:5px;
+    text-height:18px;
+}
+#riya{
+    min-height:400px;      
+    width:100%; 
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+table{
+      width:100%
+}
+h2{
+    background-color:red; 
+} 
+p1{
+    background-color:lightblue;
+ }  
+#image-container {
+  width:100%;
+  height:300px; 
+  background-image:url("Mmcoe.jpg");
+  background-size:contain;      
+  background-position:center;
+} 
+
+#divstyle{
+ width:200px
+ 
+ padding:20px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}  
+#divstyle table{
+ width:50%
+}
+#abc{
+ background-color:lightblue;
+ width:300px;
+ height:400px;
+ text-align:left;
+ margin:50px;
+ padding:20px;
+}
+#cssdiv{
+  background-color:lightgreen;
+  width:500px;
+ height:600px;
+  margin:50px auto;
+ padding:20px;
+ text-align:left;
+}
+.lbl{
+   display:inline-block;
+   width:150px;
+}
+input{
+    width:200px
+}
+#image-container1{
+  width:100%;
+  height:500px; 
+  margin:50px auto;
+  background-image:url("Mmcoe.jpg");
+  background-size:contain;      
+  background-position:center;
+}
+.house{
+       position:absolute;
+       display:flex;
+       margin-top:550px; 
+       padding:20px;
+       text-align:left;
+       background-color:red;
+       height:100px;
+}
+#home{
+      border:5px solid black;
+      display:flex;
+      display box:inline;
+      position:absolute;
+      margin-top:600px;
+}
+.features{
+         display:grid;
+         grid-template-columns:repeat(3,2fr);
+         width:80%
+         padding:20px;
+         background-color:yellow;
+}
+.box{
+     border:6px solid red;
+     height:50px;
+     border-radius:5px;
+     text align:center;
+     background-color:yellow;
+}
+
+.logo-container {
+       position:absolute;
+       display:flex;
+       justify-content:center;
+       gap:50px;
+       margin-top:180px;
+      display:inline;
+      padding: 10px;
+}
+
+
+.logo-img {
+  position:static;
+  height:50px;       
+  width:auto;        
+  display:inline;
+}
+
+/* Optional hover effect for better user experience */
+.logo-link:hover .logo-img {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+
