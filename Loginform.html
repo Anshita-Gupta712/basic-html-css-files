@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>page title</title>
+<link rel="stylesheet" href="cssbt.css">
+</head>
+<body>
+<form>
+<table border="Login details">
+<tr>
+  <td colspan ="2"><center>Login details</center></td>
+</tr>
+<tr>
+  <td>Email Address:<input type="text"name="email" name="Email"/>
+  <br><br></td> 
+  <span id="email-error" class="error-message"></span>
+</tr>
+<tr>
+  <td>Password:<input type="password"name="password"/></td>
+  <span id="password-error" class="error-message"></span>
+</tr>
+<tr>
+  <td><center><input type="button" name="Login"value="Login"></center></td>
+</tr>
+</form>
+ <script>
+        function validateForm() {
+            const email = document.getElementById("email").value;
+            const pass = document.getElementById("password").value;
+  
+            const emailErr = document.getElementById("email-error");
+            const passErr = document.getElementById("password-error");
+        
+            emailErr.textContent = "";
+            passErr.textContent = "";
+      
+            let isValid = true;
+            if (email === "" || !email.includes("@") || !email.includes(".")) {
+                emailErr.textContent = "Please enter a valid email address.";
+                isValid = false;
+            }
+            if (pass === "" || pass.length < 6) {
+                passErr.textContent = "Please enter a password with at least 6 characters.";
+                isValid = false;
+            }
+        }
+
+        function resetErrors() {
+            document.getElementById("email-error").textContent = "";
+            document.getElementById("password-error").textContent = "";
+            
+         }
+        
+</script>
+</body>
+</html>
+
